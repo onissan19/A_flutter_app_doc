@@ -33,15 +33,16 @@ We act as a consulting firm helping clients connect physical devices to the inte
 ## III- Architecture Overview
 
 ```mermaid
-graph TD
-    A[User Interface<br>(Flutter App)]
-    B[AutoModeService / ManualModeService]
-    C[ThingClient<br>(WebSocket sender)]
-    D[FakeServer<br>(WebSocket Server)]
-
-    A --> B
-    B --> C
-    C --> D
++---------------------+
+|  Flutter Mobile App |
++---------------------+
+           |
+           | WebSocket / HTTP
+           v
++---------------------+
+|     Web Server      |
+|  (Data collection)  |
++---------------------+
 ```
 
 ---
