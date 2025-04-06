@@ -32,7 +32,7 @@ We act as a consulting firm helping clients connect physical devices to the inte
 
 ## III- Architecture Overview
 
-```mermaid
+```text
 +---------------------+
 |  Flutter Mobile App |
 +---------------------+
