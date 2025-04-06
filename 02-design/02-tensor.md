@@ -69,7 +69,7 @@ graph TD
    - `ThingClient` encodes the telemetry point into JSON:
 ```json
 {
-  "thingId": "flutter_app_tensor_01",
+  "thingId": "CA-TS-00001",
   "temperature": 23.5,
   "humidity": 58,
   "timestamp": "2025-04-06T12:00:00Z"
@@ -142,7 +142,7 @@ The system prioritizes **WebSocket** for telemetry because it allows:
 #### a- Authentication
 - After establishing the WebSocket, the app sends a JSON payload:
 ```json
-{ "id": "flutter_app_tensor_01", "key": "secret_api_key" }
+{ "id": "CA-TS-00001", "key": "secret_api_key" }
 ```
 - The server replies with a confirmation if accepted.
 
